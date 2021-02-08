@@ -19,13 +19,12 @@ plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
+dependencies {
+    implementation 'no.tornado:tornadofx:1.7.20'
+}
 javafx {
     version = "11.0.2"
     modules = ['javafx.controls', 'javafx.graphics']
-}
-
-dependencies {
-    implementation 'no.tornado:tornadofx:1.7.20'
 }
 compileKotlin {
     kotlinOptions.jvmTarget = "15"
