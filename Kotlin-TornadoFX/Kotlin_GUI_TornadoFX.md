@@ -13,18 +13,18 @@ Enter selection (default: Groovy) [1..2] 1
 我們選擇Groovy
 ```
 ## [TornadoFX](https://edvin.gitbooks.io/tornadofx-guide/content/part1/2_Setting_Up.html)
+在app/build.gradle設定
 ```
 plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
+dependencies {
+    implementation 'no.tornado:tornadofx:1.7.20'
+}
 javafx {
     version = "11.0.2"
     modules = ['javafx.controls', 'javafx.graphics']
-}
-
-dependencies {
-    implementation 'no.tornado:tornadofx:1.7.20'
 }
 compileKotlin {
     kotlinOptions.jvmTarget = "15"
@@ -34,7 +34,7 @@ compileKotlin {
 因為版本現在jvm已經到15以及x.y.z是看TornadoFX目前版本為1.7.20
 [TornadoFX版本](https://tornadofx.io/)
 
-接下來建立[間單頁面測試](https://edvin.gitbooks.io/tornadofx-guide/content/part1/3_Components.html)
+接下來建立[簡單頁面測試](https://edvin.gitbooks.io/tornadofx-guide/content/part1/3_Components.html)
 
 ``` Kotlin
 package com.eria.app //這是我的package
