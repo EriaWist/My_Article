@@ -136,6 +136,7 @@ class client{
     }
 }
 ```
+在很多現代語言都有使用 Iterator pattern 像是 for in 其實就有使用到
 
 ---
 ### 參考資料: </br>
