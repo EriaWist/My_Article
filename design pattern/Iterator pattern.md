@@ -138,4 +138,6 @@ class client{
 ```
 
 ---
-### 參考資料: [反覆器模式 (Iterator Pattern)](http://corrupt003-design-pattern.blogspot.com/2016/07/iterator-pattern.html)
+### 參考資料: </br>
+* [反覆器模式 (Iterator Pattern)](http://corrupt003-design-pattern.blogspot.com/2016/07/iterator-pattern.html)</br> 
+* [疊代器模式Wiki](https://zh.wikipedia.org/wiki/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F)
