@@ -1,0 +1,2 @@
+安裝(jre,jvm)環境: `sudo apt-get install default-jre`
+安裝screen: `sudo apt-get install screen`
