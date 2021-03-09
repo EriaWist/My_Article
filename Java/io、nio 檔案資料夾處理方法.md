@@ -1,8 +1,23 @@
 # java(Kotlin語法) 檔案讀寫、資料夾創建
 
-### nio比io新速度也比較快
+### nio是non-blocking比io新速度也比較快，也不會需要等待暫停等待資料到達
 使用nio的方式
-
+> 關於使用`path.of` or `paths.get` [連結](https://stackoverflow.com/questions/58631724/paths-get-vs-path-of) [文件](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/nio/file/Paths.html)
+```
+API Note:
+It is recommended to obtain a Path via the Path.of methods instead of via the get methods defined in this class as this class may be deprecated in a future release.
+```
+結論用`path.of`
+可以用
+``` kotlin
+    val fileName =  Path.of("teww/a123/demo.txt");
+    fileName.createDirectory()
+```
+但是Kotlin[警告](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io.path/-experimental-path-api/)
+```
+This annotation marks the extensions and top-level functions for working with java.nio.file.Path considered experimental.
+```
+等未來穩定在更新
 
 ---
 
