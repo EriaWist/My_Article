@@ -2,7 +2,11 @@
 
 
 ### nio是non-blocking比io新速度也比較快，也不會需要等待暫停等待資料到達
-可以使用`System.getProperty("user.dir")`來查詢[當前目錄](https://github.com/EriaWist/My_Article/blob/main/Java/%E7%B3%BB%E7%B5%B1%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95.md)
+可以使用`System.getProperty("user.dir")`來查詢[當前目錄](https://github.com/EriaWist/My_Article/blob/main/Java/%E7%B3%BB%E7%B5%B1%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95.md)</br>
+關於使用File在`Mac`與`Windows`的路徑會自動轉換[文件](https://stackoverflow.com/questions/2417485/difference-between-file-separator-and-slash-in-paths)
+```
+With the Java libraries for dealing with files, you can safely use / (slash, not backslash) on all platforms. The library code handles translating things into platform-specific paths internally.
+```
 
 使用nio的方式
 > 關於使用`path.of` or `paths.get` [連結](https://stackoverflow.com/questions/58631724/paths-get-vs-path-of) [文件](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/nio/file/Paths.html)
