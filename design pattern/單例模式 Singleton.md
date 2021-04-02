@@ -5,18 +5,19 @@ EX.比如今天需要打開 DataBase 在不同的class開啟時，我們可能�
 ---
 ``` java
 class HttpServer{
-    static private HttpServer httpServer=null;
-    static HttpServer createHttpServer() {
-        if (httpServer == null) {
-            httpServer = new HttpServer();
+    static private HttpServer instance = null;
+    static HttpServer getInstance() {
+        if (instance == null) {
+            instance = new HttpServer();
         }
-        return httpServer;
+        return instance;
     }
     private HttpServer(){}
+
 }
 ```
 這樣在需要使用HttServer只需要
 ``` java
-HttpServer httpServer = HttpServer.createHttpServer();
+ HttpServer httpServer = HttpServer.getInstance();
 ```
 並且我們能夠確保不管在哪裡的HttpServer的實例都是同個
