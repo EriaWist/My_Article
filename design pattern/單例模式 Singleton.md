@@ -105,3 +105,4 @@ now Singleton id : 18
 > 參考文章
 * [單例模式 Singleton](https://skyyen999.gitbooks.io/-study-design-pattern-in-java/content/singleton.html)
 * [同步處理 synchronized](https://ithelp.ithome.com.tw/articles/10187884)
+* [.class](http://tw.gitbook.net/java/lang/java_lang_class.html)
