@@ -15,3 +15,6 @@
 
 ### [v6瀏覽檔案.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v6%E7%80%8F%E8%A6%BD%E6%AA%94%E6%A1%88.jpg)
 ![v6瀏覽檔案.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v6%E7%80%8F%E8%A6%BD%E6%AA%94%E6%A1%88.jpg?raw=true)
+
+### [v7run.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v7run.jpg)
+![v7run.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v7run.jpg?raw=true)
