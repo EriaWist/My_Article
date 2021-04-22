@@ -6,3 +6,12 @@
 
 ### [v3設定完成樣子.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v3%E8%A8%AD%E5%AE%9A%E5%AE%8C%E6%88%90%E6%A8%A3%E5%AD%90.jpg)
 ![v3設定完成樣子.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v3%E8%A8%AD%E5%AE%9A%E5%AE%8C%E6%88%90%E6%A8%A3%E5%AD%90.jpg?raw=true)
+
+### [v4瀏覽.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v4%E7%80%8F%E8%A6%BD.jpg)
+![v4瀏覽.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v4%E7%80%8F%E8%A6%BD.jpg?raw=true)
+
+### [v5選取Show in Finder.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v5%E9%81%B8%E5%8F%96Show%20in%20Finder.jpg)
+![v5選取Show in Finder.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v5%E9%81%B8%E5%8F%96Show%20in%20Finder.jpg?raw=true)
+
+### [v6瀏覽檔案.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v6%E7%80%8F%E8%A6%BD%E6%AA%94%E6%A1%88.jpg)
+![v6瀏覽檔案.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v6%E7%80%8F%E8%A6%BD%E6%AA%94%E6%A1%88.jpg?raw=true)
