@@ -26,3 +26,6 @@
 ![v6瀏覽檔案.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v6%E7%80%8F%E8%A6%BD%E6%AA%94%E6%A1%88.jpg?raw=true)
 接下來我們我們把 Playground Book 拉到 Swift Playground 就可以打開檔案，可以在 mac 上安裝 [Swift Playground](https://apps.apple.com/tw/app/swift-playgrounds/id1496833156?mt=12) 或者在 iPad 上安裝 [Swift Playground](https://apps.apple.com/tw/app/swift-playgrounds/id908519492?l=en) <br/>
 mac 的話將檔案丟入即可，iPad 則是把檔案 Air Drop 過去
+
+>我們就完成基本的運行
+![v7run.jpg](https://github.com/EriaWist/My_Article/blob/main/Swift/WWDC/Resource/v7run.jpg?raw=true)
