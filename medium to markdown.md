@@ -17,3 +17,6 @@ mediumexporter 網址 > 檔名.md
 mediumexporter https://eriawist.medium.com/%E5%96%AE%E4%BE%8B%E6%A8%A1%E5%BC%8F-singleton-977dfb4dfb66 > medium_post.md
 ```
 Google Chrome上也有一些插件可做使用
+* https://chrome.google.com/webstore/detail/convert-medium-posts-to-m/aelnflnmpbjgipamcogpdoppjbebnjea?hl=en
+* https://chrome.google.com/webstore/detail/export-to-markdown/dodkihcbgpjblncjahodbnlgkkflliim?hl=en
+* https://chrome.google.com/webstore/detail/medium-article-downloader/nhbfnahbjjaaplgnkffponncahohkfbb?hl=en
