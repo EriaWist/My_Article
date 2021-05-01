@@ -16,3 +16,4 @@ mediumexporter 網址 > 檔名.md
 範例: 
 mediumexporter https://eriawist.medium.com/%E5%96%AE%E4%BE%8B%E6%A8%A1%E5%BC%8F-singleton-977dfb4dfb66 > medium_post.md
 ```
+Google Chrome上也有一些插件可做使用
