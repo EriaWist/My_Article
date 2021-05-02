@@ -1,5 +1,12 @@
 # Gradle相關指令
 ## [gradle建立Kotlin應用](https://docs.gradle.org/current/samples/sample_building_kotlin_libraries.html)
+> [安裝](https://gradle.org/install/)
+``` 
+sdk install gradle 7.0
+or
+brew install gradle
+---
+```
 ```
 $ mkdir demo
 $ cd demo
