@@ -5,8 +5,10 @@
 sdk install gradle 7.0
 or
 brew install gradle
----
+and
+sudo apt  install gradle
 ```
+---
 ```
 $ mkdir demo
 $ cd demo
