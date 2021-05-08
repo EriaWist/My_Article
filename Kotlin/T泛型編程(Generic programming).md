@@ -1,4 +1,4 @@
-# Kotlin-泛型<T>
+# Kotlin-`<T>泛型編程(Generic programming)`
 
 [泛型的Wiki介紹](https://zh.wikipedia.org/wiki/%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B)
 
