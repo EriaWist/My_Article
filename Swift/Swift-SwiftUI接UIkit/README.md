@@ -77,7 +77,11 @@ new一個UIkit的Group(資料夾)方便我們整理
 
 ![](https://cdn-images-1.medium.com/max/6208/1*b8uZmoHIRh41-ejO4rBZEw.png)
 
-<iframe src="https://medium.com/media/698018d159dcff4dfd964ac8be99ce18" frameborder=0></iframe>
+``` swift
+let myStoryboard = UIStoryboard(name: "MyStoryboard", bundle: nil)
+let myViewController = myStoryboard.instantiateViewController(withIdentifier: "MyView")
+return myViewController as! MyViewController
+```
 
 到目前為止我們已經成功將UIkit頁面丟到SwiftUI，但是接下來要解決頁面溝通的部分
 
@@ -121,7 +125,26 @@ new一個UIkit的Group(資料夾)方便我們整理
 
 ![](https://cdn-images-1.medium.com/max/6208/1*hLexuIzv4rtzMIlokWDzcA.png)
 
-<iframe src="https://medium.com/media/221d375aa74ac5941a4453af1f561399" frameborder=0></iframe>
+``` swift
+class Observer {
+    static private var observer:Observer? = nil
+    private var updateFunc:(()->())?=nil
+    private init() {
+    }
+    static func createObsever() -> Observer {
+        if Observer.observer==nil {
+            Observer.observer = Observer()
+        }
+        return Observer.observer!
+    }
+    func addUpdate(update:@escaping ()->()) {
+        self.updateFunc = update
+    }
+    func update() {
+        (updateFunc ?? {print("Observer nil Error")})()
+    }
+}
+```
 
 在makeUIViewController添加Observer.createObsever().addUpdate
 
