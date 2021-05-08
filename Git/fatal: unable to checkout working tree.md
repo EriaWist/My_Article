@@ -1,5 +1,5 @@
 # fatal: unable to checkout working tree
-主要也是因為Windows在路徑文件上的規定(不能有特殊符號或空格)
+主要也是因為Windows在路徑文件上的規定(不能有特殊符號或[空格](https://github.com/EriaWist/My_Article/blob/main/Git/warning:Clone%20succeeded,but%20checkout%20failed.md))
 Ex:
 ```
 error: invalid path 'Kotlin/<T>泛型編程(Generic programming).md'
