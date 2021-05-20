@@ -44,3 +44,7 @@ GRANT SELECT,INSERT ON customers.* TO 'Eria'@'%';
 GRANT ALL PRIVILEGES ON *.* TO 'Eria'@'%';
 ```
 給 Eria 在任何ip下所有資料庫和所有資料表的所有操作權限
+``` sql
+FLUSH PRIVILEGES;
+```
+在設定完之後記得要`FLUSH PRIVILEGES`做儲存
