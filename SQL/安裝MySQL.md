@@ -15,7 +15,7 @@ sudo mysql_secure_installation
 ```
 中間有很多問答
 
-像是問你密碼複雜度
+像是問你密碼複雜度(之後創建使用者之類的密碼複雜度)
 ```
 Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 0
 ```
