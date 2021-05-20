@@ -48,3 +48,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'Eria'@'%';
 FLUSH PRIVILEGES;
 ```
 在設定完之後記得要`FLUSH PRIVILEGES`做儲存
+
+最後也能夠刪除使用者
+```sql
+DROP USER 'username'@'localhost';
+```
