@@ -1,4 +1,4 @@
-# 新增SQL使用者
+# 新增SQL使用者與設定權限
 
 ``` SQL
 CREATE USER 'username'@'hostname' IDENTIFIED BY '密碼';
