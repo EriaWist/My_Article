@@ -11,6 +11,14 @@ CREATE USER 'Eria'@'%' IDENTIFIED BY '12345678';
 ```
 建立新使用者 Eria 並且密碼為 12345678，且允許從任何地方登入 (從本地端或遠端連線都可)。
 
+> 下列指令可以查看目前使用者
+``` sql
+SELECT User,Host FROM mysql.user;
+```
+>以及查看Eria的權限(Eria可替換其他使用者)
+``` sql
+SHOW GRANTS FOR Eria;
+```
 ___
 創建好後使用者後要設定使用者對各個資料庫與Table的各項權限
 ``` sql
