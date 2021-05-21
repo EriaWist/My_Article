@@ -29,5 +29,5 @@ import org.jetbrains.exposed.sql.Database
 
 3. 連接sqlite
 ``` Kotlin
-Database.connect("jdbc:sqlite:/data/data.db", "org.sqlite.JDBC")
+Database.connect("jdbc:sqlite:./data.db", "org.sqlite.JDBC")
 ```
