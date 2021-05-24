@@ -57,18 +57,18 @@ object StarWarsFilms : IntIdTable() {
 * 或者`.uniqueIndex()`代表此欄位不能重複
 * 以及`.autoIncrement()`會自動增加數值Ex id = 1,2,3,4.....
 
-### 接下來我們需要`transaction`當作一筆執行交易
+### `transaction`執行交易，所有動作必須在交易內進行
 ``` kotlin
 transaction {
 }
 ```
 在裡面就可以開始對資料庫進行操作了
 ``` Kotlin
-SchemaUtils.create (Cities) //創造Table
+SchemaUtils.create (StarWarsFilms) //創造Table
 ```
 建立Table
 ``` Kotlin
-SchemaUtils.drop(Cities) //刪除Table
+SchemaUtils.drop(StarWarsFilms) //刪除Table
 ```
 將Table刪除，假如更改了Table架構記得要刪除在建立否則會出錯
 
@@ -89,4 +89,65 @@ OR
   it[director] = "Rian Johnson"
 } get StarWarsFilms.id //get 代表 get stPeteId 他會給StarWarsFilms的id
 ```
-
+---
+### 查詢資料`Select`
+``` kotlin
+val query: Query = StarWarsFilms.selectAll() //取得全部資料
+```
+要將`query`要單獨取出資料需要for走訪 Ex.
+``` kotlin
+for (i in query)
+{
+    println(i)//全部資料
+    println(i[StarWarsFilms.name])//只取出name
+}
+```
+或者用forEach
+``` kotlin
+StarWarsFilms.selectAll().forEach { 
+}
+```
+`select`也能夠加上條件
+``` kotlin
+val query: Query = StarWarsFilms.select { StarWarsFilms.sequelId eq 8 } //當sequelId == 8 取出
+```
+有下列條件可以使用
+``` 
+eq - (==)
+neq - (!=)
+isNull()
+isNotNull()
+less - (<)
+lessEq - (<=)
+greater - (>)
+greaterEq - (>=)
+like - (=~) //有包，可以參考SQL的LIKE
+notLike - (!~) //沒有包含
+exists
+notExists
+regexp
+notRegexp
+inList
+notInList
+between
+match (MySQL MATCH AGAINST) 
+```
+基本的邏輯符號也能使用
+```
+not
+and
+or
+```
+### Update
+``` kotlin
+StarWarsFilms.update ({ StarWarsFilms.sequelId eq 8 }) {
+  it[StarWarsFilms.name] = "Episode VIII – The Last Jedi"
+}
+```
+### Delete
+``` kotlin
+StarWarsFilms.deleteWhere { StarWarsFilms.sequelId eq 8 }
+```
+以都是基本教學詳細可以看[官方文件](https://github.com/JetBrains/Exposed/wiki/DSL#update)
+___
+## [DAO](https://github.com/JetBrains/Exposed/wiki/DAO)
