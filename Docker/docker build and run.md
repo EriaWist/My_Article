@@ -5,3 +5,8 @@
 ``` docker
 docker build .
 ```
+可以加上`--tag 標籤`標記標籤
+```
+docker build --tag myImage .  
+```
+使用`docker image ls`可以查看全部的image
