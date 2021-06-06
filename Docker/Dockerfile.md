@@ -36,3 +36,10 @@ CMD ["ls"]
 ---
 
 ### [EXPOSE](https://docs.docker.com/engine/reference/builder/#expose)
+``` dockerfile
+# 開啟port 80:80 也可以開啟特定tcp或udp
+EXPOSE 80
+EXPOSE 80/tcp
+EXPOSE 80/udp
+```
+用來讓容器內的 port 與內部連接 ＊當你需要讓內部port與主機post連接需要在run時使用`docker run -p 80:80 [image名稱]`
