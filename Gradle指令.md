@@ -22,3 +22,12 @@ Enter selection (default: Groovy) [1..2] 1
 目前市面上選擇Groovy
 ```
 專案的設定在app/build.gradle設定
+
+---
+
+下指令[打包](https://docs.gradle.org/current/userguide/application_plugin.html)
+```
+gradle distZip 打包成 ZIP
+gradle distTar 打包成 TAR
+```
+檔案放在`/Kotlin_GUI_TornadoFX/app/build/distributions`
