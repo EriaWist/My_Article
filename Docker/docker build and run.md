@@ -10,3 +10,25 @@ docker build .
 docker build --tag myImage .  
 ```
 使用`docker image ls`可以查看全部的image
+
+
+---
+### 停止刪除容器和镜像檔(image)
+> 顯示所有容器的ID
+``` 
+docker ps -aq
+```
+[參數參考](https://docs.docker.com/engine/reference/commandline/ps/)
+> 停止所有容器
+```
+docker stop $(docker ps -aq)
+```
+> 刪除所有容器
+```
+docker rm $(docker ps -aq)
+```
+> 刪除所有鏡像檔(image)
+```
+docker rmi $(docker images -q)
+```
+想要刪除單個只需要將`$(docker ps -aq)`替換成容器ID
