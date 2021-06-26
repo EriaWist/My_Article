@@ -25,9 +25,26 @@ Enter selection (default: Groovy) [1..2] 1
 
 ---
 
-下指令[打包](https://docs.gradle.org/current/userguide/application_plugin.html)
+打包[壓縮檔](https://docs.gradle.org/current/userguide/application_plugin.html)
+打包成 zip or tar
 ```
 gradle distZip 打包成 ZIP
 gradle distTar 打包成 TAR
 ```
-檔案放在`/Kotlin_GUI_TornadoFX/app/build/distributions`
+或用`gradlew`
+```
+./gradlew distZip
+./gradlew distTar
+```
+檔案放在`/app/build/distributions`
+
+---
+打包執行檔
+```
+gradle installDist
+```
+or 用`gradlew`
+```
+./gradlew installDist
+```
+檔案放在`/app/build/install/`
