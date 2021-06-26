@@ -32,3 +32,14 @@ docker rm $(docker ps -aq)
 docker rmi $(docker images -q)
 ```
 想要刪除單個只需要將`$(docker ps -aq)`替換成容器ID
+
+---
+### 執行image
+> 執行
+```
+docker run [image名稱:tag]
+```
+> 執行有對外(server)接口的 ex.開啟80(外)對80(內)接口
+```
+docker run -p 80:80 [image名稱:tag]
+```
