@@ -11,6 +11,15 @@ FROM ubuntu:20.10
 * 版本號 : 選擇的image的tage但是通常tage會使用版本號，來做版本控制
 
 ---
+### [COPY](https://docs.docker.com/engine/reference/builder/#copy)
+``` dockerfile
+COPY . /app
+```
+前面：本機電腦的資料夾 `.`代表整個資料夾
+
+後面：複製檔案的目的位置 在Docker內的資料夾
+
+---
 
 ### [RUN](https://docs.docker.com/engine/reference/builder/#run)
 ``` dockerfile
