@@ -12,6 +12,7 @@ FROM ubuntu:20.10
 
 ---
 ### [COPY](https://docs.docker.com/engine/reference/builder/#copy)
+複製資料夾到Docker系統裡面
 ``` dockerfile
 COPY . /app
 ```
@@ -32,7 +33,14 @@ RUN cd app && touch test
 > ＊注意只有在build image時會執行 run 時，並不會執行它而是CMD
 
 ---
+### [WORKDIR](https://docs.docker.com/engine/reference/builder/#workdir)
+簡單來講就是移動到那個資料夾
+``` dockerfile
+WORKDIR /app
+```
+移動到app資料夾 假如在下方使用 `RUN pwd` 就會顯示當前位置 `/app`
 
+---
 ### [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
 ``` dockerfile
 CMD ls
