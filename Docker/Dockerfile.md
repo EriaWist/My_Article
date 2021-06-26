@@ -38,7 +38,7 @@ RUN cd app && touch test
 ``` dockerfile
 WORKDIR /app
 ```
-移動到app資料夾 假如在下方使用 `RUN pwd` 就會顯示當前位置 `/app`
+移動到app資料夾 假如在下方打 `pwd` 就會顯示當前位置 `/app`
 
 ---
 ### [CMD](https://docs.docker.com/engine/reference/builder/#cmd)
