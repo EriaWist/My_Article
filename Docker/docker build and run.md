@@ -43,3 +43,7 @@ docker run [image名稱:tag]
 ```
 docker run -p 80:80 [image名稱:tag]
 ```
+> 限制記憶體使用量 (限制300M)
+```
+docker run -p 80:80 -m 300M [image名稱:tag]
+```
