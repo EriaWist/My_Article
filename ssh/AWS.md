@@ -5,3 +5,13 @@
 * 使用金鑰連線:`sudo ssh -i /金鑰存放位置/下載下來的檔案 username@ip-address`</br>
 * 使用scp傳送檔案:`sudo scp -i /金鑰存放位置/金鑰.pem檔案 要傳送的檔名 username@ip-address: `要記得:等於aws的根目錄
 
+---
+當遇到`Add correct host key in /var/root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /var/root/.ssh/known_hosts:1
+ECDSA host key for [伺服器端IP地址] has changed and you have requested strict checking.`
+
+因為你原先連線伺服器有變動所以需要你重新認證
+```
+sudo  ssh-keygen -R [伺服器端IP地址]
+```
+去把你要連線的[伺服器端IP地址]刪除
