@@ -7,7 +7,7 @@ FROM ubuntu:20.10
 # FROM image:版本號
 ```
 * image : 放上想用的容器名稱 請參考[Dockerhub](https://hub.docker.com/search?q=&type=image)
-，假如需要最基礎的可以選擇[Alpine image](https://hub.docker.com/_/alpine/)他為最小大小的容器(5MB)
+，假如需要最基礎的可以選擇[Alpine image](https://hub.docker.com/_/alpine/)他的大小為(5MB) or [scratch image](https://hub.docker.com/_/scratch)(他只能夠執行二進制檔案)
 * 版本號 : 選擇的image的tage但是通常tage會使用版本號，來做版本控制
 
 ---
