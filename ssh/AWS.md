@@ -15,3 +15,10 @@ ECDSA host key for [伺服器端IP地址] has changed and you have requested str
 sudo  ssh-keygen -R [伺服器端IP地址]
 ```
 去把你要連線的[伺服器端IP地址]刪除
+
+---
+`It is required that your private key files are NOT accessible by others.`
+金鑰權限被動到用`chmod`改一下
+```
+chmod 0600 [private key file]
+```
