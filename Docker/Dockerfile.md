@@ -60,3 +60,10 @@ EXPOSE 80/tcp
 EXPOSE 80/udp
 ```
 用來讓容器內的 port 與內部連接 **＊當你需要讓內部port與主機post連接需要在run時使用`docker run -p 80:80 [image名稱]`**
+
+---
+### [ENV](https://docs.docker.com/engine/reference/builder/#env)
+用來設定容器的環境變數
+```
+ENV PATH=$PATH:/jdk1.8.0_152/bin
+```
