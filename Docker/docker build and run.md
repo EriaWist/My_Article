@@ -41,9 +41,24 @@ docker run [image名稱:tag]
 ```
 > 執行有對外(server)接口的 ex.開啟80(外)對80(內)接口
 ```
-docker run -p 80:80 [image名稱:tag]
+docker run -dp 80:80 [image名稱:tag]
 ```
+- `-d` 在背景執行 `Run container in background and  print container ID`
+- `-p` 把電腦的 80 port 對應到 Docker Container 的 80 port `Publish a container's port(s) to the host`
 > 限制記憶體使用量 (限制300M)
 ```
-docker run -p 80:80 -m 300M [image名稱:tag]
+docker run -dp 80:80 -m 300M [image名稱:tag]
+```
+> 終端操作
+```
+docker run -it ubuntu
+```
+- `-i` 需要與 Container 做互動(輸入、輸出)時使用 `Keep STDIN open even if not attached`
+- `-t` 簡單來講就是用 terminal 的方式進入 Container `Allocate a pseudo-TTY`
+
+---
+### 進入背景執行的容器 Container
+> docker exec
+```
+
 ```
