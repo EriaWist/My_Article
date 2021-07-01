@@ -57,8 +57,18 @@ docker run -it ubuntu
 - `-t` 簡單來講就是用 terminal 的方式進入 Container `Allocate a pseudo-TTY`
 
 ---
-### 進入背景執行的容器 Container
-> docker exec
+### 進入背景執行的容器 Container 有兩種方法
+> docker attach 讓在背景執行的Container回到前台，退出時Container也跟著被關閉
 ```
-
+docker attach [容器 ID]
+```
+> docker exec 進入後退出時也不會使Container關閉
+```
+docker exec -it [容器 ID] bash
+```
+ex.
+```
+docker run -itd ubuntu
+docker exec -it [容器 ID] bash
+docker attach [容器 ID]
 ```
